@@ -2,8 +2,10 @@ CLIENT=subscriber
 SERVER=server
 
 UTILS_PATH = utils/lib/
-SOURCES_SERVER = server.c $(UTILS_PATH)queue.c $(UTILS_PATH)list.c $(UTILS_PATH)buffer.c $(UTILS_PATH)action.c
-SOURCES_CLIENT = subscriber.c $(UTILS_PATH)queue.c $(UTILS_PATH)list.c $(UTILS_PATH)client.c
+SOURCES_SERVER = server.c \
+	$(UTILS_PATH)queue.c $(UTILS_PATH)list.c $(UTILS_PATH)buffer.c $(UTILS_PATH)action.c
+SOURCES_CLIENT = subscriber.c \
+	$(UTILS_PATH)queue.c $(UTILS_PATH)list.c $(UTILS_PATH)client.c
 
 LIBRARY=nope
 LIBPATHS=.
